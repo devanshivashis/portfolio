@@ -1,0 +1,32 @@
+:root {
+  --bg: #000000;
+  --text: #f7f7fb;
+  --accent: #8A2BE2;
+  --accent-2: #46E7B1;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, sans-serif;
+}
+
+.section { padding: 80px 24px; max-width: 1080px; margin: 0 auto; }
+h1, h2, h3 { font-family: Space Grotesk, sans-serif; }
+
+.nav { position: sticky; top: 0; background: rgba(0,0,0,0.8); padding: 12px 24px; display: flex; justify-content: space-between; }
+.nav a { color: var(--text); margin: 0 10px; text-decoration: none; }
+
+.hero { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
+.hero__gif img { width: 100%; border-radius: 16px; box-shadow: 0 0 40px var(--accent); }
+
+.btn { padding: 10px 16px; border-radius: 12px; border: 1px solid var(--accent); margin-right: 8px; }
+.btn.primary { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #000; border: 0; }
+
+.chip, .badges span {
+  display: inline-block; padding: 6px 10px; border-radius: 999px; margin: 6px;
+  background: rgba(255,255,255,0.1); font-family: JetBrains Mono, monospace;
+}
+.card { padding: 18px; background: rgba(255,255,255,0.05); border-radius: 16px; }
+.footer { text-align: center; padding: 24px; color: #aaa; }
